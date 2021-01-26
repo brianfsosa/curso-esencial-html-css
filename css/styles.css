@@ -1,8 +1,15 @@
+:root {
+    font-size: 18px;
+    --gray30: #212121;
+    --gray20: #212429;
+    --gray10: #616161;
+}
+
 body {
-    color: #212121;
+    color: var(--gray30);
 }
  a {
-    color: #212121;
+    color: var(--gray30);
  }
 
  h1 {
@@ -11,8 +18,19 @@ body {
 
  header {
      font-size: 14px;
+     color: var(--gray10);
  }
+header a{
+    color: var(--gray10);
+    text-decoration: none;
+}
+header a:hover{
+    color:var(--gray30);
+}
 
+nav details summary {
+    font-weight: bold;
+}
  h2 {
      font-size: 2em;
  }
