@@ -69,3 +69,19 @@ pre {
     height: 350px;
     background: linear-gradient(to top, rgba(255,255,255,.3), transparent), url('../images/pattern.png');
 }
+
+h3 {
+    counter-increment: tittleList;
+}
+h3::before{
+    content:counter(tittleList)
+}
+
+h3::after{
+    content:'';
+    width: 32px;
+    height: 4px;
+    background: var(--gray30);
+    display: inline-block;
+}
+
